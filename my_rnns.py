@@ -103,7 +103,7 @@ class GRU_Model(tf.keras.Model):
     def __init__(self, vocab_size):
         super().__init__()
         self.vocab_size = vocab_size
-        x = initializers(vocab_size)
+        x = initializers(vocab_size)  
         self.embedding_dim = x.embedding_dim
         self.rnn_units = x.rnn_units
         self.loss = x.loss
